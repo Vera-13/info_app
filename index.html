@@ -4,56 +4,598 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internships</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <nav>
-      <button data-page="page1">Internships</button>
-      <button data-page="page2">Projects</button>
-      <button data-page="page3">Colaborators</button>
+      <button class="menu-toggle" aria-label="Menu Toggle">☰</button>
+      <button data-page="page1" class="nav-button">Home</button>
+      <button data-page="page2" class="nav-button">Internships</button>
+      <button data-page="page3" class="nav-button">Projects</button>
+      <button data-page="page4" class="nav-button">Collaborations</button>
+      <button data-page="page5" class="nav-button">Contact Us</button>
     </nav>
-    <div id="page1" class="card">
-      <img src="images/intern.jpg" alt="intern_photo">
-      <div class="info">
-      <h2>Internships</h2>
-        <p>
-        Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Obcaecati asperiores
-        possimus sapiente ex deserunt est
-        accusantium illo quam dolor nam,
-        voluptatibus facilis velit dicta sit!
-        Dignissimos laudantium aliquid libero nesciunt.
-        </p>
+
+    <div class="container-page">
+
+      <div id="page1" class="doc">
+        <div class="scroll-container">
+          <div class="card" id="card1">
+          <div class="welcome-container">
+            <h1>Who we are</h1>
+            <p class="welcome-p">
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Nobis quos veniam exercitationem
+              rerum voluptatibus aspernatur at, voluptate
+              ducimus delectus magnam non blanditiis.
+              Quidem similique laboriosam
+              atque earum deleniti minima distinctio.
+            </p>
+          </div>
+            <button class="discover-button">Discover</button>
+          </div>
+
+          <div class="card" id="card2">
+            <!-- <img src="images/intern1.jpg" alt="intern_photo"> -->
+            <div class="subcard " id="subcard1">
+             <div class="info-subcard">
+              <h2>Internships</h2>
+              <p class="subcard-p">
+              Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Obcaecati asperiores
+              possimus sapiente ex deserunt est
+              accusantium illo quam dolor nam,
+              voluptatibus facilis velit dicta sit!
+              Dignissimos laudantium aliquid libero nesciunt.
+              </p>
+             </div>
+              <div>
+                <button class="subcard-button">Find out more</button>
+              </div>
+            </div>
+            <div class="subcard " id="subcard2">
+              <div class="info-subcard">
+                <h2>Projects</h2>
+                <p class="subcard-p">
+                Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Obcaecati asperiores
+                possimus sapiente.
+                </p>
+              </div>
+              <div>
+                <button class="subcard-button">Find out more</button>
+              </div>
+
+            </div>
+            <div class="subcard " id="subcard3">
+              <div class="info-subcard">
+                <h2>Collaborations</h2>
+              <p class="subcard-p">
+              Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Obcaecati asperiores
+              possimus sapiente ex deserunt est
+              accusantium illo quam dolor nam.
+              </p>
+              </div>
+              <div>
+                <button class="subcard-button">Find out more</button>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="card" id="card3">
+            <div class="contacts-div" id="contacts-div1">
+            </div>
+
+            <div class="contacts-div" id="contacts-div2">
+              <h2>Let's talk</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque officia illo obcaecati aspernatur cupiditate maiores quisquam doloribus voluptatum veniam quas alias harum, odit, perferendis ducimus similique est fugiat corrupti.
+              </p>
+              <button class="contact-button">CONTACT US</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="page2" class="doc">
+       <div class="intern-container">
+        <div class="intern-card">
+
+          <div class="description">
+            <h3>Internship nr1</h3>
+            <h4>Full Job Description</h4>
+            <p>
+              Outlier helps the world’s most
+              innovative companies improve their
+              AI models by providing human feedback.
+              Are you an experienced Belgian
+              French writer who would like to l
+              end your expertise to train
+              AI models?
+            </p>
+          </div>
+          <div class="about">
+            <h3>About the opportunity:</h3>
+            <ul>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+            </ul>
+          </div>
+          <div class="contribute">
+            <h3>You may contribute your expertise by…</h3>
+            <ul>
+              <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+              <li>Writing a short story in Belgian French about a given topic</li>
+            </ul>
+          </div>
+          <div class="expertise">
+            <h3>Examples of desirable expertise:</h3>
+            <ul>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+            </ul>
+          </div>
+          <div class="payement">
+            <h3>Payment</h3>
+            <ul>
+              <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+              <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+            </ul>
+          </div>
+          <button class="expand-btn">More</button>
+        </div>
+        <div class="intern-card">
+          <div class="description">
+            <h3>Internship nr1</h3>
+            <h4>Full Job Description</h4>
+            <p>
+              Outlier helps the world’s most
+              innovative companies improve their
+              AI models by providing human feedback.
+              Are you an experienced Belgian
+              French writer who would like to l
+              end your expertise to train
+              AI models?
+            </p>
+          </div>
+          <div class="about">
+            <h3>About the opportunity:</h3>
+            <ul>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+            </ul>
+          </div>
+          <div class="contribute">
+            <h3>You may contribute your expertise by…</h3>
+            <ul>
+              <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+              <li>Writing a short story in Belgian French about a given topic</li>
+            </ul>
+          </div>
+          <div class="expertise">
+            <h3>Examples of desirable expertise:</h3>
+            <ul>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+            </ul>
+          </div>
+          <div class="payement">
+            <h3>Payment</h3>
+            <ul>
+              <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+              <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+            </ul>
+          </div>
+          <button class="expand-btn">More</button>
+        </div>
+
+
+       </div>
+      </div>
+      <div id="page3" class="doc">
+        <div class="intern-container">
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+
+         </div>
+      </div>
+      <div id="page4" class="doc">
+        <div class="intern-container">
+          <div class="intern-card">
+            <h3>Internship nr1</h3>
+            <div class="description">
+              <h3>Full Job Description</h3>
+              <p>
+                Outlier helps the world’s most
+                innovative companies improve their
+                AI models by providing human feedback.
+                Are you an experienced Belgian
+                French writer who would like to l
+                end your expertise to train
+                AI models?
+              </p>
+            </div>
+            <div class="about">
+              <h3>About the opportunity:</h3>
+              <ul>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+                <li>Outlier is looking for talented writers with fluency in Belgian French to help train generative artificial intelligence models</li>
+              </ul>
+            </div>
+            <div class="contribute">
+              <h3>You may contribute your expertise by…</h3>
+              <ul>
+                <li>Reading Belgian French text in order to rank a series of responses that were produced by an AI model</li>
+                <li>Writing a short story in Belgian French about a given topic</li>
+              </ul>
+            </div>
+            <div class="expertise">
+              <h3>Examples of desirable expertise:</h3>
+              <ul>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+                <li>Professional writing experience (copywriter, journalist, technical writer, editor, etc.)</li>
+              </ul>
+            </div>
+            <div class="payement">
+              <h3>Payment</h3>
+              <ul>
+                <li>Currently, pay rates for core project work by Belgian French writing experts ~€28 per hour</li>
+                <li>Rates vary based on expertise, skills assessment, location, project need, and other factors. For example, higher rates may be offered to PhDs. For non-core work, such as during initial project onboarding or project overtime phases, lower rates may apply. Certain projects offer incentive payments. Please review the payment terms for each project.</li>
+              </ul>
+            </div>
+            <button class="expand-btn">More</button>
+          </div>
+
+         </div>
+      </div>
+      <div id="page5" class="doc">
+
+        <div class="div-form">
+
+        <div >
+          <form action="https://formspree.io/f/xgvepvvk" method="POST">
+            <h2>Contact Us</h2>
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="What's your full name?" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Subject:
+              <select name="subject" required>
+              <option value="internship">Internship</option>
+              <option value="projects">Project</option>
+              <option value="collaboration">Collaboration</option>
+              </select>
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" placeholder="Write your message for the team here" rows="4" required></textarea>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        </div>
       </div>
     </div>
-    <div id="page2" class="card">
-      <img src="images/projects.jpg" alt="intern_photo">
-      <div class="info">
-        <h2>Projects</h2>
-        <p>
-        Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Obcaecati asperiores
-        possimus sapiente ex deserunt est
-        accusantium illo quam dolor nam,
-        voluptatibus facilis velit dicta sit!
-        Dignissimos laudantium aliquid libero nesciunt.
-        </p>
-      </div>
+
+    <div class="footer">
+
+      <button class="footer-button">
+        <a href="https://github.com/">Github</a>
+
+      </button>
+
     </div>
-    <div id="page3" class="card">
-      <img src="images/colaborate.jpg" alt="intern_photo">
-      <div class="info">
-        <h2>Colaborations</h2>
-        <p>
-        Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Obcaecati asperiores
-        possimus sapiente ex deserunt est
-        accusantium illo quam dolor nam,
-        voluptatibus facilis velit dicta sit!
-        Dignissimos laudantium aliquid libero nesciunt.
-        </p>
-      </div>
-    </div>
+
   </body>
 </html>
